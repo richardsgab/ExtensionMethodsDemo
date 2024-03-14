@@ -10,7 +10,12 @@ namespace ExtensionStrings
     {
         public static void Lijn(this int aantal)// "this" converts the method in an Extendion method
         {
-            Console.WriteLine(new string('_', aantal));
+            Console.WriteLine(new string('-', aantal));
+        }
+
+        public static void SpeciaalLijn(this int aantal, char symbol) //Get two parameters!
+        {            
+            Console.WriteLine(new string(symbol, aantal));
         }
     }
 }

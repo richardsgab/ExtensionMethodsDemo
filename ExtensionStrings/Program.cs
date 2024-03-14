@@ -30,9 +30,13 @@ void Main()//To access the class Person
     
     Console.WriteLine(person.FullName());//This is the call to the extension method
     Print();
+    IsPalindroom();
+    SpecialPrint();
+    PascalCaseFromAnyWord();
 
-    ExtensionStringsType.IsPalindroom("kayak");
-    ExtensionStringsType.IsPalindroom("ball");
+    WordtellenExemple();
+    Console.WriteLine("Une phrase avec beaucoup plus de mots que la première phrase".WoordTeller());
+
     
 }
 void Print()
@@ -41,5 +45,34 @@ void Print()
     30.Lijn();//calling the extension method
     80.Lijn();
     int u = 100;
-    u.Lijn();    
+    u.Lijn();
+
+    string exemple = "bonjour à tous";
+    (exemple.Length + 4).Lijn();
+    Console.WriteLine($"· {exemple} ·");
+    (exemple.Length + 4).Lijn();
+}
+void IsPalindroom()
+{
+   /* string str = "lepel";
+    bool ispalindromm = str.IsPalindroom();*/
+    Console.WriteLine("lepel".IsPalindroom());
+}
+void WordtellenExemple()
+{
+    Console.WriteLine("Une phrase avec beaucoup de mots".WoordTeller());
+    string zin = "Dit is een voorbeeld zin";
+    int quantity = zin.WoordTeller();
+    Console.WriteLine($"aantal woorden is: {quantity}");    
+}
+void SpecialPrint()
+{
+    40.SpeciaalLijn('¨');
+    60.SpeciaalLijn('^');
+    IntExtensions.SpeciaalLijn(20, 'ù');//this is normal method call, not extension method
+}
+void PascalCaseFromAnyWord()
+{
+    string str = "hOlA aMIgOS dEL baRRiO";
+    str.FirstLetterToUpper();
 }

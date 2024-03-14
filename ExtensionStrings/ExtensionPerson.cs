@@ -9,7 +9,7 @@ namespace ExtensionStrings
 {
     public static class ExtensionPerson
     {
-        public static string FullName(this Person person)
+        public static string FullName(this Person person)//means that "extends"class Person
         {
             return person.FirstName + " " + person.LastName;
         }
