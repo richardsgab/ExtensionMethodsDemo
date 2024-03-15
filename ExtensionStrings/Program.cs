@@ -17,7 +17,9 @@ void SayChaoToOldFramework()
     Console.WriteLine("Chao Framework");
 }*/
 
-using ExtensionStrings;
+
+
+using ExtensionsLibrary;
 
 Main();
 
@@ -54,8 +56,9 @@ void Print()
 }
 void IsPalindroom()
 {
-   /* string str = "lepel";
-    bool ispalindromm = str.IsPalindroom();*/
+    /* string str = "lepel";
+     bool ispalindromm = str.IsPalindroom();*/
+    Console.WriteLine("Is not");
     Console.WriteLine("lepel".IsPalindroom());
 }
 void WordtellenExemple()
@@ -69,7 +72,7 @@ void SpecialPrint()
 {
     40.SpeciaalLijn('¨');
     60.SpeciaalLijn('^');
-    IntExtensions.SpeciaalLijn(20, 'ù');//this is normal method call, not extension method
+    ExtensionsINT.SpeciaalLijn(20, 'ù');//this is normal method call, not extension method
 }
 void PascalCaseFromAnyWord()
 {
